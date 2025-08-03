@@ -8,19 +8,19 @@ using UnityEngine;
 /// If you don't feel free to make this a standard class
 /// </summary>
 public class ResourceSystem : StaticInstance<ResourceSystem> {
-    public List<ScriptableExampleHero> ExampleHeroes { get; private set; }
-    private Dictionary<ExampleHeroType, ScriptableExampleHero> _ExampleHeroesDict;
+    public List<ScriptableCycles> ExampleHeroes { get; private set; }
+    // private Dictionary<ExampleHeroType, ScriptableCycles> _ExampleHeroesDict;
 
     protected override void Awake() {
         base.Awake();
-        AssembleResources();
+        // AssembleResources();
     }
 
-    private void AssembleResources() {
-        ExampleHeroes = Resources.LoadAll<ScriptableExampleHero>("ExampleHeroes").ToList();
-        _ExampleHeroesDict = ExampleHeroes.ToDictionary(r => r.HeroType, r => r);
-    }
+    // private void AssembleResources() {
+    //     ExampleHeroes = Resources.LoadAll<ScriptableCycles>("ExampleHeroes").ToList();
+    //     _ExampleHeroesDict = ExampleHeroes.ToDictionary(r => r.HeroType, r => r);
+    // }
 
-    public ScriptableExampleHero GetExampleHero(ExampleHeroType t) => _ExampleHeroesDict[t];
-    public ScriptableExampleHero GetRandomHero() => ExampleHeroes[Random.Range(0, ExampleHeroes.Count)];
+    // public ScriptableCycles GetExampleHero(ExampleHeroType t) => _ExampleHeroesDict[t];
+    // public ScriptableCycles GetRandomHero() => ExampleHeroes[Random.Range(0, ExampleHeroes.Count)];
 }   

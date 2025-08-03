@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 50f989483dd0f0b479e597a9b07c18ac
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 8404be70184654265930450def6a9037, type: 3}
+  generateWrapperCode: 0
+  wrapperCodePath: 
+  wrapperClassName: SimpleControls
+  wrapperCodeNamespace: 

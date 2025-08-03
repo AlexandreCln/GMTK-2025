@@ -6,7 +6,7 @@ using UnityEngine;
 /// info on the menu screen, without instantiating the unit prefab.
 /// </summary>
 public abstract class ScriptableExampleUnitBase : ScriptableObject {
-    public Faction Faction;
+    public int NbCycles;
 
     [SerializeField] private Stats _stats;
     public Stats BaseStats => _stats;
